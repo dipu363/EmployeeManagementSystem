@@ -1,0 +1,11 @@
+--For backup-- single line, no semicolon at the end
+1. cd C:\Program Files\MySQL\MySQL Server 5.0\bin
+2. mysqldump -uroot -pbari123 --add-drop-database -B test -r C:/Users/User/Desktop/test.sql
+
+Note:
+1. --add-drop-database	//Add DROP DATABASE statement before each CREATE DATABASE statement
+
+--For restore--
+1. cd C:\Program Files\MySQL\MySQL Server 5.0\bin
+2. mysql.exe -uroot -pbari123
+3. source C:/Users/User/Desktop/test.sql; //semicolon must need here
